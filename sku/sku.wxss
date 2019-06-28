@@ -1,0 +1,48 @@
+@import '../../../style/count.wxss';
+.sku-box {
+  width: 100%;
+  height: inherit;
+  background-color: #fff;
+  color: #666;
+}
+
+.sku-item .item {
+  height: 70rpx;
+  width:fit-content;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 25rpx;
+  background-color: #f9f9f9;
+  border-radius: 2rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 70rpx;
+  color: #444;
+}
+.sku-item .title{
+  height: 26rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+	font-size: 26rpx;
+	line-height: 26rpx;
+	color: #333;
+}
+
+.sku-item .disabled {
+  color: #999;
+  /* border: 1px dashed #666; */
+}
+.sku-item .active {
+  color: #f66c6c;
+}
+.sku-item{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+
+/* .sku-box .scroll {
+  height: inherit;
+} */

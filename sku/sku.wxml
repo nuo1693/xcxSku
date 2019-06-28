@@ -1,0 +1,17 @@
+<scroll-view scroll-y class='sku-box'>
+    <view class='sku-item' wx:for='{{list.result}}' wx:for-index='key' wx:key='{{key}}'>
+        <view class='title'>{{key}}</view>
+        <view class="item {{value.active ? 'active':''}} {{!value.active && value.disabled ? 'disabled' : ''}}" wx:for="{{item}}" data-value='{{value}}' data-key='{{key}}' wx:for-item="value" 
+        catchtap='handleActive' data-index='{{index}}' wx:key='{{index}}'>
+            {{ value.name }}
+        </view>
+    </view>
+    <view class='sku-item' wx:if='{{hasNumber}}'>
+        <view class='title'>数量</view>
+        <view class='count-box'>
+            <text class="count-down {{goodsNumber ==1 ? 'count-down-gary' : '' }}" bindtap="minusCount">-</text>
+            <text class='count-num'>{{goodsNumber}}</text>
+            <text class='count-add' bindtap="addCount" data-index="{{index}}">+</text>
+        </view>
+    </view>
+</scroll-view>
